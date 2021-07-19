@@ -34,7 +34,7 @@ export default function Form() {
         <div>
           <Card>
             <NumberInput
-              text='What door has the gift?'
+              text='Which door has the gift?'
               value={doorWithGift}
               onChange={(giftDoor) => setDoorWithGift(giftDoor)}
             ></NumberInput>
