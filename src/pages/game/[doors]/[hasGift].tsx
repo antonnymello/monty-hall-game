@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Door from '../../../components/Door';
 import { createDoors, updateDoors } from '../../../functions/doors';
 
-export default function game() {
+export default function Game() {
   const router = useRouter();
 
   const [valid, setValid] = useState(false);
@@ -45,7 +45,7 @@ export default function game() {
         {valid ? renderDoors() : <h1>Invalid values!!</h1>}
       </div>
       <div className={styles.buttons}>
-        <Link href='/'>
+        <Link href='/' passHref>
           <button>Restart</button>
         </Link>
       </div>
